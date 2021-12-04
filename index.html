@@ -545,7 +545,7 @@
                                             "action": {
                                                 "type": "uri",
                                                 "label": "分享給朋友",
-                                                "uri": "https://liff.line.me/1566533074-8KjWGM0O"
+                                                "uri": "https://liff.line.me/1656693260-DgOlMqxk?json1=123"
                                             },
                                             "style": "link",
                                             "color": "#01A8F0"
@@ -909,7 +909,7 @@
                                             "action": {
                                                 "type": "uri",
                                                 "label": "分享給朋友",
-                                                "uri": "https://liff.line.me/1566533074-8KjWGM0O"
+                                                "uri": "https://liff.line.me/1656693260-DgOlMqxk?json1=123"
                                             },
                                             "style": "link",
                                             "color": "#01A8F0"
@@ -951,7 +951,10 @@
             return null; //返回参数值
         }
 
-        //var val = getUrlParam('json1');
+        var val = getUrlParam('json1');
+        if (val == "123") {
+            $('#ButtonSendMsg').click();
+        }
         //var url1 = "./" + val + ".txt";
         //$(document).ready(function() {
         // $("#testvalue").val(val); 
@@ -973,7 +976,7 @@
                 <br>
                 <button class="btn btn-primary" id="Buttontofriend">分享給朋友</button><br />
                 <br>
-                <input id="testvalue" value="123">
+                <input id="testvalue" value="789">
             </div>
             <br>
         </div>
