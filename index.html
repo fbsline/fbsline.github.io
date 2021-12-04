@@ -951,10 +951,12 @@
             return null; //返回参数值
         }
 
-        var val = getUrlParam('json1');
+
         $(document).ready(function() {
+            var val = getUrlParam('json1');
             if (val == "123") {
                 $('#Buttontofriend').trigger("click");
+                $("#testvalue").val(val);
             }
         });
         //var url1 = "./" + val + ".txt";
@@ -978,7 +980,7 @@
                 <br>
                 <button class="btn btn-primary" id="Buttontofriend">分享給朋友</button><br />
                 <br>
-                <input id="testvalue" value="12312333">
+                <input id="testvalue" value="59559">
             </div>
             <br>
         </div>
