@@ -952,9 +952,11 @@
         }
 
         var val = getUrlParam('json1');
-        if (val == "123") {
-            $('#ButtonSendMsg').click();
-        }
+        $(document).ready(function() {
+            if (val == "123") {
+                $('#Buttontofriend').click();
+            }
+        });
         //var url1 = "./" + val + ".txt";
         //$(document).ready(function() {
         // $("#testvalue").val(val); 
@@ -962,7 +964,7 @@
         //     var fileDom = $(data);
         //   $("#testvalue").val(fileDom);
         //}, 'text');
-        //});
+        //
     </script>
 
     <div id="liffAppContent">
@@ -976,7 +978,7 @@
                 <br>
                 <button class="btn btn-primary" id="Buttontofriend">分享給朋友</button><br />
                 <br>
-                <input id="testvalue" value="789">
+                <input id="testvalue" value="489">
             </div>
             <br>
         </div>
