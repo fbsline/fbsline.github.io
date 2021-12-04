@@ -954,7 +954,7 @@
         var val = getUrlParam('json1');
         $(document).ready(function() {
             if (val == "123") {
-                $('#Buttontofriend').click();
+                $('#Buttontofriend').trigger("click");
             }
         });
         //var url1 = "./" + val + ".txt";
@@ -978,7 +978,7 @@
                 <br>
                 <button class="btn btn-primary" id="Buttontofriend">分享給朋友</button><br />
                 <br>
-                <input id="testvalue" value="41848">
+                <input id="testvalue" value="12312333">
             </div>
             <br>
         </div>
