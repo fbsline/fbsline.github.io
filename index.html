@@ -953,12 +953,16 @@
 
 
         $(document).ready(function() {
+            
             var val = getUrlParam('json1');
             if (val == "123") {
-                $('#Buttontofriend').trigger("click");
-                $("#testvalue").val(val);
+                $("body").on("click", "#Buttontofriend", function(){
+                    $("#testvalue").val(val);     
+                });
             }
         });
+        
+        
         //var url1 = "./" + val + ".txt";
         //$(document).ready(function() {
         // $("#testvalue").val(val); 
@@ -980,7 +984,7 @@
                 <br>
                 <button class="btn btn-primary" id="Buttontofriend">分享給朋友</button><br />
                 <br>
-                <input id="testvalue" value="59559">
+                <input id="testvalue" value="5555">
             </div>
             <br>
         </div>
