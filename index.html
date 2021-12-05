@@ -5,86 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自訂面板傳送</title>
     <style>
-        html {
-            font-size: 11px;
-        }
-        
-        body {
-            background-color: #71efe3;
-        }
-        
-        table {
-            width: 100%;
-            table-layout: fixed;
-            word-break: break-all;
-        }
-        
-        div {
-            max-width: 100%;
-            text-align: center;
-        }
-        
-        th {
-            text-align: center;
-        }
-        
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-        
-        img {
-            max-width: 25%;
-            height: auto;
-        }
-        
-        button {
-            margin: 4px;
-        }
-        
-        #code-block {
-            background-color: #71efe3;
-            border: 1px solid #999;
-            display: block;
-            padding: 20px;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-        
-        #profilePictureDiv {
-            text-align: center;
-        }
-        
-        #profileImageDiv {
-            height: 100px;
-            width: 100px;
-        }
-        
-        #statusMessage {
-            position: relative;
-            top: 40px;
-        }
-        
-        .textLeft {
-            text-align: left;
-        }
-        
-        .buttonGroup {
-            position: relative;
-            top: 20px;
-        }
-        
         .hidden {
             display: none;
         }
     </style>
-    <script src="jquery-3.3.1.min.js"></script>
+    <!--<script src="jquery-3.3.1.min.js"></script>
     <script src="bootstrap.min.js"></script>
-    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" />-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
 <body>
@@ -209,734 +140,1456 @@
 
 
         function registerButtonHandlerss() {
-            if (val == "123") {
-                document.getElementById("Buttontofriend").click();
-                $("#testvalue").val(val);   
-            }
-            $('#Buttontofriend').click(function() {
-                liff.shareTargetPicker([{
-                            type: 'flex',
-                            altText: '你有一則抽籤通知',
-                            contents: {
-                                "type": "bubble",
-                                "size": "giga",
-                                "direction": "ltr",
-                                "header": {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "backgroundColor": "#01A8F0",
-                                    "contents": [{
-                                        "type": "text",
-                                        "text": "【抽籤快訊】",
-                                        "weight": "bold",
-                                        "size": "lg",
-                                        "color": "#FFFFFF",
-                                        "contents": [],
-                                        "align": "center"
-                                    }]
-                                },
-                                "body": {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [{
+            if (checkValue == "1") {
+                $('#Buttontofriend').click(function() {
+                    liff.shareTargetPicker([{
+                                type: 'flex',
+                                altText: '你有一則抽籤通知',
+                                contents: {
+                                    "type": "bubble",
+                                    "size": "giga",
+                                    "direction": "ltr",
+                                    "header": {
                                         "type": "box",
-                                        "layout": "horizontal",
+                                        "layout": "vertical",
+                                        "backgroundColor": "#01A8F0",
                                         "contents": [{
-                                            "type": "image",
-                                            "url": "https://www.fubon.com/securities/hot_new/bank-mopen/images/logo_s.png",
-                                            "flex": 1,
-                                            "align": "start",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "action",
-                                                "uri": "https://www.fubon.com/securities/home/index.htm"
-                                            },
-                                            "aspectMode": "fit",
-                                            "aspectRatio": "3:2",
-                                            "size": "xxs"
-                                        }, {
                                             "type": "text",
-                                            "text": "北基(8927)",
+                                            "text": "【抽籤快訊】",
                                             "weight": "bold",
-                                            "color": "#01A8F0",
+                                            "size": "lg",
+                                            "color": "#FFFFFF",
                                             "contents": [],
-                                            "size": "xl",
-                                            "flex": 2
-                                        }],
-                                        "flex": 3
-                                    }, {
+                                            "align": "center"
+                                        }]
+                                    },
+                                    "body": {
                                         "type": "box",
-                                        "layout": "horizontal",
-                                        "spacing": "sm",
+                                        "layout": "vertical",
                                         "contents": [{
                                             "type": "box",
-                                            "layout": "vertical",
-                                            "width": "110px",
-                                            "height": "110px",
-                                            "backgroundColor": "#E0F1F8",
-                                            "cornerRadius": "100px",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "image",
+                                                "url": "https://www.fubon.com/securities/hot_new/bank-mopen/images/logo_s.png",
+                                                "flex": 1,
+                                                "align": "start",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "action",
+                                                    "uri": "https://www.fubon.com/securities/home/index.htm"
+                                                },
+                                                "aspectMode": "fit",
+                                                "aspectRatio": "3:2",
+                                                "size": "xxs"
+                                            }, {
+                                                "type": "text",
+                                                "text": "北基(8927)",
+                                                "weight": "bold",
+                                                "color": "#01A8F0",
+                                                "contents": [],
+                                                "size": "xl",
+                                                "flex": 2
+                                            }],
+                                            "flex": 3
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "sm",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "width": "110px",
+                                                "height": "110px",
+                                                "backgroundColor": "#E0F1F8",
+                                                "cornerRadius": "100px",
+                                                "contents": [{
+                                                    "type": "text",
+                                                    "text": "申購截止日",
+                                                    "weight": "bold",
+                                                    "color": "#0089D1",
+                                                    "align": "center",
+                                                    "gravity": "bottom",
+                                                    "offsetTop": "30%",
+                                                    "contents": []
+                                                }, {
+                                                    "type": "text",
+                                                    "text": "12/06",
+                                                    "weight": "bold",
+                                                    "offsetTop": "35%",
+                                                    "contents": [],
+                                                    "align": "center"
+                                                }],
+                                                "flex": 3
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "offsetStart": "5%",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "sm",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "申購價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "25.0元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "股數",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "1000",
+                                                        "contents": []
+                                                    }],
+                                                    "margin": "md"
+                                                }],
+                                                "offsetTop": "10px",
+                                                "flex": 2
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "前一日收盤價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "33.0元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "md",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "每張價差",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "7,950(24.1%)",
+                                                        "weight": "bold",
+                                                        "color": "#FF4141",
+                                                        "contents": [],
+                                                        "offsetEnd": "none"
+                                                    }]
+                                                }],
+                                                "margin": "xs",
+                                                "offsetTop": "14px",
+                                                "flex": 3
+                                            }],
+                                            "flex": 10
+                                        }, {
+                                            "type": "separator",
+                                            "margin": "md"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
                                             "contents": [{
                                                 "type": "text",
-                                                "text": "申購截止日",
-                                                "weight": "bold",
-                                                "color": "#0089D1",
-                                                "align": "center",
-                                                "gravity": "bottom",
-                                                "offsetTop": "30%",
+                                                "text": "起始",
                                                 "contents": []
                                             }, {
                                                 "type": "text",
-                                                "text": "12/06",
-                                                "weight": "bold",
-                                                "offsetTop": "35%",
+                                                "text": "截止",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "扣款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "抽籤",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "退款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "撥券",
+                                                "contents": []
+                                            }],
+                                            "flex": 6
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#EF454D",
+                                                "cornerRadius": "100px",
                                                 "contents": [],
-                                                "align": "center"
-                                            }],
-                                            "flex": 3
-                                        }, {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "offsetStart": "5%",
-                                            "contents": [{
-                                                "type": "box",
-                                                "layout": "vertical",
-                                                "margin": "sm",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "申購價",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "25.0元",
-                                                    "contents": []
-                                                }]
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
                                             }, {
                                                 "type": "box",
-                                                "layout": "vertical",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "股數",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "1000",
-                                                    "contents": []
-                                                }],
-                                                "margin": "md"
-                                            }],
-                                            "offsetTop": "10px",
-                                            "flex": 2
-                                        }, {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [{
-                                                "type": "box",
-                                                "layout": "vertical",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "前一日收盤價",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "33.0元",
-                                                    "contents": []
-                                                }]
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
                                             }, {
                                                 "type": "box",
-                                                "layout": "vertical",
-                                                "margin": "md",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "每張價差",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "7,950(24.1%)",
-                                                    "weight": "bold",
-                                                    "color": "#FF4141",
-                                                    "contents": [],
-                                                    "offsetEnd": "none"
-                                                }]
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
                                             }],
-                                            "margin": "xs",
-                                            "offsetTop": "14px",
-                                            "flex": 3
-                                        }],
-                                        "flex": 10
-                                    }, {
-                                        "type": "separator",
-                                        "margin": "md"
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "spacing": "md",
-                                        "margin": "md",
-                                        "offsetStart": "3%",
-                                        "contents": [{
-                                            "type": "text",
-                                            "text": "起始",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "截止",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "扣款",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "抽籤",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "退款",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "撥券",
-                                            "contents": []
-                                        }],
-                                        "flex": 6
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [{
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#EF454D",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF",
-                                            "offsetEnd": "2%"
-                                        }, {
-                                            "type": "filler"
+                                            "backgroundColor": "#DDDDDD",
+                                            "margin": "md",
+                                            "offsetStart": "6%",
+                                            "cornerRadius": "20px",
+                                            "flex": 11,
+                                            "width": "90%",
+                                            "paddingStart": "2%",
+                                            "spacing": "xxl"
                                         }, {
                                             "type": "box",
                                             "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF",
-                                            "offsetEnd": "2%"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }],
-                                        "backgroundColor": "#DDDDDD",
-                                        "margin": "md",
-                                        "offsetStart": "6%",
-                                        "cornerRadius": "20px",
-                                        "flex": 11,
-                                        "width": "90%",
-                                        "paddingStart": "2%",
-                                        "spacing": "xxl"
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "spacing": "md",
-                                        "margin": "md",
-                                        "offsetStart": "3%",
-                                        "contents": [{
-                                            "type": "text",
-                                            "text": "12/02",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/06",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/07",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/08",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/09",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/16",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }],
-                                        "flex": 6
-                                    }]
-                                },
-                                "footer": {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [{
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
+                                            "contents": [{
+                                                "type": "text",
+                                                "text": "12/02",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/06",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/07",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/08",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/09",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/16",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }],
+                                            "flex": 6
+                                        }]
+                                    },
+                                    "footer": {
                                         "type": "box",
                                         "layout": "horizontal",
                                         "contents": [{
-                                            "type": "button",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "馬上抽籤去",
-                                                "uri": "https://www.fbs.com.tw/e11.htm"
-                                            },
-                                            "style": "link",
-                                            "color": "#01A8F0"
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "馬上抽籤去",
+                                                    "uri": "https://www.fbs.com.tw/e11.htm"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "cornerRadius": "6px",
+                                            "borderWidth": "medium"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "分享給朋友",
+                                                    "uri": "https://liff.line.me/1656693260-DgOlMqxk/index.html?json1=123"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "borderWidth": "medium",
+                                            "cornerRadius": "6px"
                                         }],
-                                        "flex": 3,
-                                        "borderColor": "#01A8F0",
-                                        "cornerRadius": "6px",
-                                        "borderWidth": "medium"
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [{
-                                            "type": "button",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "分享給朋友",
-                                                "uri": "https://liff.line.me/1656693260-DgOlMqxk/index.html?json1=123"
-                                            },
-                                            "style": "link",
-                                            "color": "#01A8F0"
-                                        }],
-                                        "flex": 3,
-                                        "borderColor": "#01A8F0",
-                                        "borderWidth": "medium",
-                                        "cornerRadius": "6px"
-                                    }],
-                                    "spacing": "md"
+                                        "spacing": "md"
+                                    }
                                 }
-                            }
 
-                        }
-                        //text: 'good'
-                        //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
-                    ])
-                    .then(() => {
-                        alert('已傳送!');
-                    })
-            });
+                            }
+                            //text: 'good'
+                            //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
+                        ])
+                        .then(() => {
+                            alert('已傳送!');
+                        })
+                });
+            }
+            if (checkValue == "2") {
+                $('#Buttontofriend').click(function() {
+                    liff.shareTargetPicker([{
+                                type: 'flex',
+                                altText: '你有一則抽籤通知',
+                                contents: {
+                                    "type": "bubble",
+                                    "size": "giga",
+                                    "direction": "ltr",
+                                    "header": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "backgroundColor": "#01A8F0",
+                                        "contents": [{
+                                            "type": "text",
+                                            "text": "【抽籤快訊】",
+                                            "weight": "bold",
+                                            "size": "lg",
+                                            "color": "#FFFFFF",
+                                            "contents": [],
+                                            "align": "center"
+                                        }]
+                                    },
+                                    "body": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [{
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "image",
+                                                "url": "https://www.fubon.com/securities/hot_new/bank-mopen/images/logo_s.png",
+                                                "flex": 1,
+                                                "align": "start",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "action",
+                                                    "uri": "https://www.fubon.com/securities/home/index.htm"
+                                                },
+                                                "aspectMode": "fit",
+                                                "aspectRatio": "3:2",
+                                                "size": "xxs"
+                                            }, {
+                                                "type": "text",
+                                                "text": "宏致(3605)",
+                                                "weight": "bold",
+                                                "color": "#01A8F0",
+                                                "contents": [],
+                                                "size": "xl",
+                                                "flex": 2
+                                            }],
+                                            "flex": 3
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "sm",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "width": "110px",
+                                                "height": "110px",
+                                                "backgroundColor": "#E0F1F8",
+                                                "cornerRadius": "100px",
+                                                "contents": [{
+                                                    "type": "text",
+                                                    "text": "申購截止日",
+                                                    "weight": "bold",
+                                                    "color": "#0089D1",
+                                                    "align": "center",
+                                                    "gravity": "bottom",
+                                                    "offsetTop": "30%",
+                                                    "contents": []
+                                                }, {
+                                                    "type": "text",
+                                                    "text": "12/06",
+                                                    "weight": "bold",
+                                                    "offsetTop": "35%",
+                                                    "contents": [],
+                                                    "align": "center"
+                                                }],
+                                                "flex": 3
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "offsetStart": "5%",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "sm",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "申購價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "40.0元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "股數",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "1000",
+                                                        "contents": []
+                                                    }],
+                                                    "margin": "md"
+                                                }],
+                                                "offsetTop": "10px",
+                                                "flex": 2
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "前一日收盤價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "50.5元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "md",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "每張價差",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "10,500(26.2%)",
+                                                        "weight": "bold",
+                                                        "color": "#FF4141",
+                                                        "contents": [],
+                                                        "offsetEnd": "none"
+                                                    }]
+                                                }],
+                                                "margin": "xs",
+                                                "offsetTop": "14px",
+                                                "flex": 3
+                                            }],
+                                            "flex": 10
+                                        }, {
+                                            "type": "separator",
+                                            "margin": "md"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
+                                            "contents": [{
+                                                "type": "text",
+                                                "text": "起始",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "截止",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "扣款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "抽籤",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "退款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "撥券",
+                                                "contents": []
+                                            }],
+                                            "flex": 6
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#EF454D",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }],
+                                            "backgroundColor": "#DDDDDD",
+                                            "margin": "md",
+                                            "offsetStart": "6%",
+                                            "cornerRadius": "20px",
+                                            "flex": 11,
+                                            "width": "90%",
+                                            "paddingStart": "2%",
+                                            "spacing": "xxl"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
+                                            "contents": [{
+                                                "type": "text",
+                                                "text": "12/07",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/09",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/10",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/13",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/14",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/21",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }],
+                                            "flex": 6
+                                        }]
+                                    },
+                                    "footer": {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [{
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "馬上抽籤去",
+                                                    "uri": "https://www.fbs.com.tw/e11.htm"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "cornerRadius": "6px",
+                                            "borderWidth": "medium"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "分享給朋友",
+                                                    "uri": "https://liff.line.me/1656693260-DgOlMqxk/index.html?json1=2"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "borderWidth": "medium",
+                                            "cornerRadius": "6px"
+                                        }],
+                                        "spacing": "md"
+                                    }
+                                }
+
+                            }
+                            //text: 'good'
+                            //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
+                        ])
+                        .then(() => {
+                            alert('已傳送!');
+                        })
+                });
+            }
 
 
         }
 
         function registerButtonHandlers() {
-            $('#ButtonSendMsg').click(function() {
-                liff.sendMessages([{
-                            type: 'flex',
-                            altText: '你有一則抽籤通知',
-                            contents: {
-                                "type": "bubble",
-                                "size": "giga",
-                                "direction": "ltr",
-                                "header": {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "backgroundColor": "#01A8F0",
-                                    "contents": [{
-                                        "type": "text",
-                                        "text": "【抽籤快訊】",
-                                        "weight": "bold",
-                                        "size": "lg",
-                                        "color": "#FFFFFF",
-                                        "contents": [],
-                                        "align": "center"
-                                    }]
-                                },
-                                "body": {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [{
+            if (checkValue == "1") {
+                $('#ButtonSendMsg').click(function() {
+                    liff.sendMessages([{
+                                type: 'flex',
+                                altText: '你有一則抽籤通知',
+                                contents: {
+                                    "type": "bubble",
+                                    "size": "giga",
+                                    "direction": "ltr",
+                                    "header": {
                                         "type": "box",
-                                        "layout": "horizontal",
+                                        "layout": "vertical",
+                                        "backgroundColor": "#01A8F0",
                                         "contents": [{
-                                            "type": "image",
-                                            "url": "https://www.fubon.com/securities/hot_new/bank-mopen/images/logo_s.png",
-                                            "flex": 1,
-                                            "align": "start",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "action",
-                                                "uri": "https://www.fubon.com/securities/home/index.htm"
-                                            },
-                                            "aspectMode": "fit",
-                                            "aspectRatio": "3:2",
-                                            "size": "xxs"
-                                        }, {
                                             "type": "text",
-                                            "text": "北基(8927)",
+                                            "text": "【抽籤快訊】",
                                             "weight": "bold",
-                                            "color": "#01A8F0",
+                                            "size": "lg",
+                                            "color": "#FFFFFF",
                                             "contents": [],
-                                            "size": "xl",
-                                            "flex": 2
-                                        }],
-                                        "flex": 3
-                                    }, {
+                                            "align": "center"
+                                        }]
+                                    },
+                                    "body": {
                                         "type": "box",
-                                        "layout": "horizontal",
-                                        "spacing": "sm",
+                                        "layout": "vertical",
                                         "contents": [{
                                             "type": "box",
-                                            "layout": "vertical",
-                                            "width": "110px",
-                                            "height": "110px",
-                                            "backgroundColor": "#E0F1F8",
-                                            "cornerRadius": "100px",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "image",
+                                                "url": "https://www.fubon.com/securities/hot_new/bank-mopen/images/logo_s.png",
+                                                "flex": 1,
+                                                "align": "start",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "action",
+                                                    "uri": "https://www.fubon.com/securities/home/index.htm"
+                                                },
+                                                "aspectMode": "fit",
+                                                "aspectRatio": "3:2",
+                                                "size": "xxs"
+                                            }, {
+                                                "type": "text",
+                                                "text": "北基(8927)",
+                                                "weight": "bold",
+                                                "color": "#01A8F0",
+                                                "contents": [],
+                                                "size": "xl",
+                                                "flex": 2
+                                            }],
+                                            "flex": 3
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "sm",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "width": "110px",
+                                                "height": "110px",
+                                                "backgroundColor": "#E0F1F8",
+                                                "cornerRadius": "100px",
+                                                "contents": [{
+                                                    "type": "text",
+                                                    "text": "申購截止日",
+                                                    "weight": "bold",
+                                                    "color": "#0089D1",
+                                                    "align": "center",
+                                                    "gravity": "bottom",
+                                                    "offsetTop": "30%",
+                                                    "contents": []
+                                                }, {
+                                                    "type": "text",
+                                                    "text": "12/06",
+                                                    "weight": "bold",
+                                                    "offsetTop": "35%",
+                                                    "contents": [],
+                                                    "align": "center"
+                                                }],
+                                                "flex": 3
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "offsetStart": "5%",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "sm",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "申購價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "25.0元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "股數",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "1000",
+                                                        "contents": []
+                                                    }],
+                                                    "margin": "md"
+                                                }],
+                                                "offsetTop": "10px",
+                                                "flex": 2
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "前一日收盤價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "33.0元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "md",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "每張價差",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "7,950(24.1%)",
+                                                        "weight": "bold",
+                                                        "color": "#FF4141",
+                                                        "contents": [],
+                                                        "offsetEnd": "none"
+                                                    }]
+                                                }],
+                                                "margin": "xs",
+                                                "offsetTop": "14px",
+                                                "flex": 3
+                                            }],
+                                            "flex": 10
+                                        }, {
+                                            "type": "separator",
+                                            "margin": "md"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
                                             "contents": [{
                                                 "type": "text",
-                                                "text": "申購截止日",
-                                                "weight": "bold",
-                                                "color": "#0089D1",
-                                                "align": "center",
-                                                "gravity": "bottom",
-                                                "offsetTop": "30%",
+                                                "text": "起始",
                                                 "contents": []
                                             }, {
                                                 "type": "text",
-                                                "text": "12/06",
-                                                "weight": "bold",
-                                                "offsetTop": "35%",
+                                                "text": "截止",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "扣款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "抽籤",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "退款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "撥券",
+                                                "contents": []
+                                            }],
+                                            "flex": 6
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#EF454D",
+                                                "cornerRadius": "100px",
                                                 "contents": [],
-                                                "align": "center"
-                                            }],
-                                            "flex": 3
-                                        }, {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "offsetStart": "5%",
-                                            "contents": [{
-                                                "type": "box",
-                                                "layout": "vertical",
-                                                "margin": "sm",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "申購價",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "25.0元",
-                                                    "contents": []
-                                                }]
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
                                             }, {
                                                 "type": "box",
-                                                "layout": "vertical",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "股數",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "1000",
-                                                    "contents": []
-                                                }],
-                                                "margin": "md"
-                                            }],
-                                            "offsetTop": "10px",
-                                            "flex": 2
-                                        }, {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [{
-                                                "type": "box",
-                                                "layout": "vertical",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "前一日收盤價",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "33.0元",
-                                                    "contents": []
-                                                }]
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
                                             }, {
                                                 "type": "box",
-                                                "layout": "vertical",
-                                                "margin": "md",
-                                                "contents": [{
-                                                    "type": "text",
-                                                    "text": "每張價差",
-                                                    "contents": []
-                                                }, {
-                                                    "type": "text",
-                                                    "text": "7,950(24.1%)",
-                                                    "weight": "bold",
-                                                    "color": "#FF4141",
-                                                    "contents": [],
-                                                    "offsetEnd": "none"
-                                                }]
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
                                             }],
-                                            "margin": "xs",
-                                            "offsetTop": "14px",
-                                            "flex": 3
-                                        }],
-                                        "flex": 10
-                                    }, {
-                                        "type": "separator",
-                                        "margin": "md"
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "spacing": "md",
-                                        "margin": "md",
-                                        "offsetStart": "3%",
-                                        "contents": [{
-                                            "type": "text",
-                                            "text": "起始",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "截止",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "扣款",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "抽籤",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "退款",
-                                            "contents": []
-                                        }, {
-                                            "type": "text",
-                                            "text": "撥券",
-                                            "contents": []
-                                        }],
-                                        "flex": 6
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [{
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#EF454D",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF",
-                                            "offsetEnd": "2%"
-                                        }, {
-                                            "type": "filler"
+                                            "backgroundColor": "#DDDDDD",
+                                            "margin": "md",
+                                            "offsetStart": "6%",
+                                            "cornerRadius": "20px",
+                                            "flex": 11,
+                                            "width": "90%",
+                                            "paddingStart": "2%",
+                                            "spacing": "xxl"
                                         }, {
                                             "type": "box",
                                             "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF",
-                                            "offsetEnd": "2%"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }, {
-                                            "type": "filler"
-                                        }, {
-                                            "type": "box",
-                                            "layout": "horizontal",
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "2px",
-                                            "borderColor": "#0089D1",
-                                            "cornerRadius": "100px",
-                                            "contents": [],
-                                            "backgroundColor": "#FFFFFF"
-                                        }],
-                                        "backgroundColor": "#DDDDDD",
-                                        "margin": "md",
-                                        "offsetStart": "6%",
-                                        "cornerRadius": "20px",
-                                        "flex": 11,
-                                        "width": "90%",
-                                        "paddingStart": "2%",
-                                        "spacing": "xxl"
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "spacing": "md",
-                                        "margin": "md",
-                                        "offsetStart": "3%",
-                                        "contents": [{
-                                            "type": "text",
-                                            "text": "12/02",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/06",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/07",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/08",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/09",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }, {
-                                            "type": "text",
-                                            "text": "12/16",
-                                            "contents": [],
-                                            "size": "sm"
-                                        }],
-                                        "flex": 6
-                                    }]
-                                },
-                                "footer": {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [{
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
+                                            "contents": [{
+                                                "type": "text",
+                                                "text": "12/02",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/06",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/07",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/08",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/09",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/16",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }],
+                                            "flex": 6
+                                        }]
+                                    },
+                                    "footer": {
                                         "type": "box",
                                         "layout": "horizontal",
                                         "contents": [{
-                                            "type": "button",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "馬上抽籤去",
-                                                "uri": "https://www.fbs.com.tw/e11.htm"
-                                            },
-                                            "style": "link",
-                                            "color": "#01A8F0"
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "馬上抽籤去",
+                                                    "uri": "https://www.fbs.com.tw/e11.htm"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "cornerRadius": "6px",
+                                            "borderWidth": "medium"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "分享給朋友",
+                                                    "uri": "https://liff.line.me/1656693260-DgOlMqxk/index.html?json1=1"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "borderWidth": "medium",
+                                            "cornerRadius": "6px"
                                         }],
-                                        "flex": 3,
-                                        "borderColor": "#01A8F0",
-                                        "cornerRadius": "6px",
-                                        "borderWidth": "medium"
-                                    }, {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [{
-                                            "type": "button",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "分享給朋友",
-                                                "uri": "https://liff.line.me/1656693260-DgOlMqxk/index.html?json1=123"
-                                            },
-                                            "style": "link",
-                                            "color": "#01A8F0"
-                                        }],
-                                        "flex": 3,
-                                        "borderColor": "#01A8F0",
-                                        "borderWidth": "medium",
-                                        "cornerRadius": "6px"
-                                    }],
-                                    "spacing": "md"
+                                        "spacing": "md"
+                                    }
                                 }
-                            }
 
-                        }
-                        //text: 'good'
-                        //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
-                    ])
-                    .then(() => {
-                        alert('已傳送!');
-                    })
-            });
+                            }
+                            //text: 'good'
+                            //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
+                        ])
+                        .then(() => {
+                            alert('北基已傳送!');
+                        })
+                });
+            }
             // scanCode call
+            if (checkValue == "2") {
+                $('#ButtonSendMsg').click(function() {
+                    liff.sendMessages([{
+                                type: 'flex',
+                                altText: '你有一則抽籤通知',
+                                contents: {
+                                    "type": "bubble",
+                                    "size": "giga",
+                                    "direction": "ltr",
+                                    "header": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "backgroundColor": "#01A8F0",
+                                        "contents": [{
+                                            "type": "text",
+                                            "text": "【抽籤快訊】",
+                                            "weight": "bold",
+                                            "size": "lg",
+                                            "color": "#FFFFFF",
+                                            "contents": [],
+                                            "align": "center"
+                                        }]
+                                    },
+                                    "body": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [{
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "image",
+                                                "url": "https://www.fubon.com/securities/hot_new/bank-mopen/images/logo_s.png",
+                                                "flex": 1,
+                                                "align": "start",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "action",
+                                                    "uri": "https://www.fubon.com/securities/home/index.htm"
+                                                },
+                                                "aspectMode": "fit",
+                                                "aspectRatio": "3:2",
+                                                "size": "xxs"
+                                            }, {
+                                                "type": "text",
+                                                "text": "宏致(3605)",
+                                                "weight": "bold",
+                                                "color": "#01A8F0",
+                                                "contents": [],
+                                                "size": "xl",
+                                                "flex": 2
+                                            }],
+                                            "flex": 3
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "sm",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "width": "110px",
+                                                "height": "110px",
+                                                "backgroundColor": "#E0F1F8",
+                                                "cornerRadius": "100px",
+                                                "contents": [{
+                                                    "type": "text",
+                                                    "text": "申購截止日",
+                                                    "weight": "bold",
+                                                    "color": "#0089D1",
+                                                    "align": "center",
+                                                    "gravity": "bottom",
+                                                    "offsetTop": "30%",
+                                                    "contents": []
+                                                }, {
+                                                    "type": "text",
+                                                    "text": "12/09",
+                                                    "weight": "bold",
+                                                    "offsetTop": "35%",
+                                                    "contents": [],
+                                                    "align": "center"
+                                                }],
+                                                "flex": 3
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "offsetStart": "5%",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "sm",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "申購價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "40.0元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "股數",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "1000",
+                                                        "contents": []
+                                                    }],
+                                                    "margin": "md"
+                                                }],
+                                                "offsetTop": "10px",
+                                                "flex": 2
+                                            }, {
+                                                "type": "box",
+                                                "layout": "vertical",
+                                                "contents": [{
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "前一日收盤價",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "50.5元",
+                                                        "contents": []
+                                                    }]
+                                                }, {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "margin": "md",
+                                                    "contents": [{
+                                                        "type": "text",
+                                                        "text": "每張價差",
+                                                        "contents": []
+                                                    }, {
+                                                        "type": "text",
+                                                        "text": "10,500(26.2%)",
+                                                        "weight": "bold",
+                                                        "color": "#FF4141",
+                                                        "contents": [],
+                                                        "offsetEnd": "none"
+                                                    }]
+                                                }],
+                                                "margin": "xs",
+                                                "offsetTop": "14px",
+                                                "flex": 3
+                                            }],
+                                            "flex": 10
+                                        }, {
+                                            "type": "separator",
+                                            "margin": "md"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
+                                            "contents": [{
+                                                "type": "text",
+                                                "text": "起始",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "截止",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "扣款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "抽籤",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "退款",
+                                                "contents": []
+                                            }, {
+                                                "type": "text",
+                                                "text": "撥券",
+                                                "contents": []
+                                            }],
+                                            "flex": 6
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#EF454D",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF",
+                                                "offsetEnd": "2%"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }, {
+                                                "type": "filler"
+                                            }, {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "width": "15px",
+                                                "height": "15px",
+                                                "borderWidth": "2px",
+                                                "borderColor": "#0089D1",
+                                                "cornerRadius": "100px",
+                                                "contents": [],
+                                                "backgroundColor": "#FFFFFF"
+                                            }],
+                                            "backgroundColor": "#DDDDDD",
+                                            "margin": "md",
+                                            "offsetStart": "6%",
+                                            "cornerRadius": "20px",
+                                            "flex": 11,
+                                            "width": "90%",
+                                            "paddingStart": "2%",
+                                            "spacing": "xxl"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "spacing": "md",
+                                            "margin": "md",
+                                            "offsetStart": "3%",
+                                            "contents": [{
+                                                "type": "text",
+                                                "text": "12/07",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/09",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/10",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/13",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/14",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }, {
+                                                "type": "text",
+                                                "text": "12/21",
+                                                "contents": [],
+                                                "size": "sm"
+                                            }],
+                                            "flex": 6
+                                        }]
+                                    },
+                                    "footer": {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [{
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "馬上抽籤去",
+                                                    "uri": "https://www.fbs.com.tw/e11.htm"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "cornerRadius": "6px",
+                                            "borderWidth": "medium"
+                                        }, {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [{
+                                                "type": "button",
+                                                "action": {
+                                                    "type": "uri",
+                                                    "label": "分享給朋友",
+                                                    "uri": "https://liff.line.me/1656693260-DgOlMqxk/index.html?json1=2"
+                                                },
+                                                "style": "link",
+                                                "color": "#01A8F0"
+                                            }],
+                                            "flex": 3,
+                                            "borderColor": "#01A8F0",
+                                            "borderWidth": "medium",
+                                            "cornerRadius": "6px"
+                                        }],
+                                        "spacing": "md"
+                                    }
+                                }
+
+                            }
+                            //text: 'good'
+                            //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
+                        ])
+                        .then(() => {
+                            alert('已傳送!');
+                        })
+                });
+            }
 
 
         }
@@ -955,10 +1608,18 @@
             if (r != null) return unescape(r[2]);
             return null; //返回参数值
         }
-       var val = getUrlParam('json1');
- 
-        
-        
+        var val = getUrlParam('json1');
+        $(document).ready(function() {
+            $('#selectone').append("<option value='1'>抽籤通知-北基</option>");
+            $('#selectone').append("<option value='2'>抽籤通知-宏致</option>");
+            $('#selectone').val(val);
+
+
+        });
+        var checkValue = $("#selectone").val();
+
+
+
         //var url1 = "./" + val + ".txt";
         //$(document).ready(function() {
         // $("#testvalue").val(val); 
@@ -969,16 +1630,22 @@
         //
     </script>
 
+
+
     <div id="liffAppContent">
         <div style="background-color:#71efe3" class="container">
             <!-- ACTION BUTTONS -->
             <br>
-            <div>
+            <div class="container">
+                <br>
+                <select class="custom-select mr-sm-2" id="selectone">
+                </select><br><br>
+
                 <!-- <button class="btn btn-primary" id="scanQrCodeButton">掃同學的QRcode(限Android手機)</button> -->
-                <button class="btn btn-primary" id="ButtonSendMsg">傳送到這個聊天室</button><br />
+                <button class="btn btn-primary text-center" name="thischat" id="ButtonSendMsg">傳送到這個聊天室</button><br />
                 <br>
-                <br>
-                <button class="btn btn-primary" id="Buttontofriend">分享給朋友</button><br />
+
+                <button class="btn btn-primary text-center" name="tofriend" id="Buttontofriend">分享給朋友</button><br />
                 <br>
                 <input id="testvalue" value="5555">
             </div>
