@@ -191,6 +191,7 @@
         function initializeApp() {
             registerButtonHandlers();
             registerButtonHandlerss();
+            sharetofriend();
 
             // check if the user is logged in/out, and disable inappropriate button
         }
@@ -951,15 +952,13 @@
             return null; //返回参数值
         }
 
-
-        $(document).ready(function() {
-            
+       function sharetofriend() {
             var val = getUrlParam('json1');
             if (val == "123") {
                 document.getElementById("Buttontofriend").click();
                 $("#testvalue").val(val);   
             }
-        });
+       }
         
         
         //var url1 = "./" + val + ".txt";
