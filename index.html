@@ -956,9 +956,8 @@
             
             var val = getUrlParam('json1');
             if (val == "123") {
-                $("body").on("click", "#Buttontofriend", function(){
-                    $("#testvalue").val(val);     
-                });
+                document.getElementById("Buttontofriend").click();
+                $("#testvalue").val(val);   
             }
         });
         
