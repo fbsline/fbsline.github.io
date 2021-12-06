@@ -1225,7 +1225,10 @@
                         .then(() => {
                             alert('抽籤通知-北基已傳送!');
                         })
-                } else if (ccc == "2") {
+                        .catch((err) => {
+                            console.log('error', err);
+                        });
+                } if (ccc == "2") {
                     liff.sendMessages([{
                                 type: 'flex',
                                 altText: '你有一則抽籤通知',
@@ -1583,6 +1586,9 @@
                         .then(() => {
                             alert('抽籤通知-宏致已傳送!');
                         })
+                        .catch((err) => {
+                            console.log('error', err);
+                        });
 
                 }
             });
