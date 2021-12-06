@@ -865,9 +865,9 @@
 
         function registerButtonHandlers() {
             $('#ButtonSendMsg').click(function() {
-                var checkValue = $("#selectone").val();
-                console.log(checkValue);
-                if (checkValue == "1") {
+                var ccc = $("#selectone").val();
+                console.log(ccc);
+                if (ccc == "1") {
                     liff.sendMessages([{
                                 type: 'flex',
                                 altText: '你有一則抽籤通知',
@@ -1225,7 +1225,7 @@
                         .then(() => {
                             alert('抽籤通知-北基已傳送!');
                         })
-                } else if (checkValue == "2") {
+                } else if (ccc == "2") {
                     liff.sendMessages([{
                                 type: 'flex',
                                 altText: '你有一則抽籤通知',
