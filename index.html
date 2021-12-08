@@ -142,13 +142,6 @@
          */
 
         
-        $(function () {
-            $.getJSON("draw1.json", function (data) {
-                var draw1 = data;
-                console.log(data);
-            });
-        });
-
         
 
 
@@ -2170,6 +2163,10 @@
                 $('#selectone').append("<option value='2'>抽籤通知-宏致</option>");
                 $('#selectone').append("<option value='test'>扣款通知測試</option>");
             }
+            $.getJSON("draw1.json", function (data) {
+                var draw1 = data;
+                console.log(data);
+            });
 
 
 
