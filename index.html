@@ -143,7 +143,7 @@
 
         var draw1;
         $(function () {
-            $.getJSON("draw1.json", function (data) {
+            $.getJSON("edm00900.json", function (data) {
                 draw1 = data;
             });
         });
@@ -175,9 +175,11 @@
                             alert('抽籤通知-順藥已傳送!');
                             liff.closeWindow();
                         })
-                } else if (checkValue == "2") {
+                } else if (checkValue == "edm00900") {
                     liff.shareTargetPicker([
-                                draw2
+                                type: 'flex',
+                                altText: '你有一則抽籤通知',
+                                contents: draw2
 
                             
                             //text: 'good'
@@ -213,7 +215,7 @@
                             console.log('error', err);
                         });
                 }
-                if (ccc == "2") {
+                if (ccc == "edm00900") {
                     liff.sendMessages([{
                                 type: 'flex',
                                 altText: '你有一則抽籤通知',
@@ -260,13 +262,13 @@
             console.log(val);
             if (val != null) {
                 $('#selectone').prepend("<option value='6535'>抽籤通知-順藥</option>");
-                $('#selectone').append("<option value='2'>抽籤通知-宏致</option>");
+                $('#selectone').append("<option value='edm00900'>EDM-00900</option>");
                 $('#selectone').val(val);
                 $('#selectone').attr('disabled', 'disabled');
 
             } else {
                 $('#selectone').prepend("<option value='6535' selected>抽籤通知-順藥</option>");
-                $('#selectone').append("<option value='2'>抽籤通知-宏致</option>");
+                $('#selectone').append("<option value='edm00900'>EDM-00900</option>");
             }
 
 
