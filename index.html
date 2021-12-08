@@ -150,6 +150,10 @@
 
         function registerButtonHandlerss() {
             $('#Buttontofriend').click(function () {
+                $.getJSON("draw1.json", function (data) {
+                    var draw1 = data;
+                    console.log(data);
+                });
                 var checkValue = $("#selectone").val();
                 console.log(checkValue);
                 if (checkValue == "1") {
@@ -2163,14 +2167,6 @@
                 $('#selectone').append("<option value='2'>抽籤通知-宏致</option>");
                 $('#selectone').append("<option value='test'>扣款通知測試</option>");
             }
-            $.getJSON("draw1.json", function (data) {
-                var draw1 = data;
-                console.log(data);
-            });
-
-
-
-
         });
 
 
