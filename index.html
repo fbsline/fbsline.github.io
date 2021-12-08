@@ -180,11 +180,12 @@
                                 type: 'flex',
                                 altText: '你有一則EDM通知',
                                 contents: draw1
+                        }
 
                             
                             //text: 'good'
                             //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
-                    }])
+                    ])
                         .then(() => {
                             alert('訊息已傳送!');
                             liff.closeWindow();
