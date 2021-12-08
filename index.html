@@ -149,7 +149,7 @@
         });
         var draw2;
         $(function () {
-            $.getJSON("draw2.json", function (data) {
+            $.getJSON("6535.json", function (data) {
                 draw2 = data;
             });
         });
@@ -167,26 +167,26 @@
                     liff.shareTargetPicker([{
                                 type: 'flex',
                                 altText: '你有一則抽籤通知',
-                                contents: draw1
+                                contents: draw2
                             //text: 'good'
                             //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
                         }])
                         .then(() => {
-                            alert('抽籤通知-順藥已傳送!');
+                            alert('訊息已傳送!');
                             liff.closeWindow();
                         })
                 } else if (checkValue == "edm00900") {
                     liff.shareTargetPicker([{
                                 type: 'flex',
-                                altText: '你有一則抽籤通知',
-                                contents: draw2
+                                altText: '你有一則EDM通知',
+                                contents: draw1
 
                             
                             //text: 'good'
                             //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
                     }])
                         .then(() => {
-                            alert('抽籤通知-宏致已傳送!');
+                            alert('訊息已傳送!');
                             liff.closeWindow();
                         })
 
@@ -202,13 +202,13 @@
                     liff.sendMessages([{
                                 type: 'flex',
                                 altText: '你有一則抽籤通知',
-                                contents: draw1
+                                contents: draw2
                             }
                             //text: 'good'
                             //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
                         ])
                         .then(() => {
-                            alert('抽籤通知-順藥已傳送!');
+                            alert('訊息已傳送');
                             liff.closeWindow();
                         })
                         .catch((err) => {
@@ -218,15 +218,15 @@
                 if (ccc == "edm00900") {
                     liff.sendMessages([{
                                 type: 'flex',
-                                altText: '你有一則抽籤通知',
-                                contents: draw2
+                                altText: '你有一則EDM通知',
+                                contents: draw1
 
                             }
                             //text: 'good'
                             //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
                         ])
                         .then(() => {
-                            alert('抽籤通知-宏致已傳送!');
+                            alert('訊息已傳送!');
                             liff.closeWindow();
                         })
                         .catch((err) => {
