@@ -72,16 +72,24 @@
                 "color": "#0089D1",
                 "align": "center",
                 "gravity": "bottom",
-                "offsetTop": "30%",
+                "offsetTop": "25%",
                 "contents": []
               },
               {
                 "type": "text",
                 "text": "12/10",
                 "weight": "bold",
-                "offsetTop": "35%",
+                "offsetTop": "29%",
                 "contents": [],
                 "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "14:00前",
+                "offsetTop": "30%",
+                "weight": "bold",
+                "align": "center",
+                "color": "#B5B5B5"
               }
             ],
             "flex": 3
