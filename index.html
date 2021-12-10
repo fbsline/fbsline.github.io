@@ -147,12 +147,12 @@
                 draw1 = data;
             });
         });
-        var draw2;
-        $(function () {
-            $.getJSON("6535.json", function (data) {
-                draw2 = data;
-            });
-        });
+//         var draw2;
+//         $(function () {
+//             $.getJSON("6535.json", function (data) {
+//                 draw2 = data;
+//             });
+//         });
         var draw3;
         $(function () {
             $.getJSON("1314.json", function (data) {
@@ -187,19 +187,7 @@
             $('#Buttontofriend').click(function () {
                 var checkValue = $("#selectone").val();
                 console.log(checkValue);
-                if (checkValue == "6535") {
-                    liff.shareTargetPicker([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw2
-                            //text: 'good'
-                            //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
-                        }])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-                } else if (checkValue == "edm00900") {
+                if (checkValue == "edm00900") {
                     liff.shareTargetPicker([{
                                 type: 'flex',
                                 altText: '你有一則EDM通知',
@@ -287,23 +275,6 @@
             $('#ButtonSendMsg').click(function () {
                 var ccc = $("#selectone").val();
                 console.log(ccc);
-                if (ccc == "6535") {
-                    liff.sendMessages([{
-                                type: 'flex',
-                                altText: '你有一則抽籤通知',
-                                contents: draw2
-                            }
-                            //text: 'good'
-                            //text: ('{"uid":"'+($('#msg-uid').val())+'",'+ '"number":"'+($('#msg-num').val())+'",'+'"phone":"'+($('#msg-pho').val())+'",'+'"temp":"'+($('#msg-temp').val())+'",'+'"special":"'+($('#msg-special').val())+'"}')
-                        ])
-                        .then(() => {
-                            alert('訊息已傳送');
-                            liff.closeWindow();
-                        })
-                        .catch((err) => {
-                            console.log('error', err);
-                        });
-                }
                 if (ccc == "edm00900") {
                     liff.sendMessages([{
                                 type: 'flex',
@@ -425,8 +396,8 @@
         $(document).ready(function () {
             console.log(val);
             if (val != null) {
-                $('#selectone').prepend("<option value='6535'>抽籤通知-順藥</option>");
-                $('#selectone').append("<option value='1314'>抽籤通知-中石化</option>");
+//                 $('#selectone').prepend("<option value='6535'>抽籤通知-順藥</option>");
+                $('#selectone').prepend("<option value='1314'>抽籤通知-中石化</option>");
                 $('#selectone').append("<option value='1432'>抽籤通知-大魯閣</option>");
                 $('#selectone').append("<option value='3029'>抽籤通知-零壹</option>");
                 $('#selectone').append("<option value='4770'>抽籤通知-上品</option>");
@@ -436,8 +407,8 @@
                 $('#ButtonSendMsg').remove();
 
             } else {
-                $('#selectone').prepend("<option value='6535' selected>抽籤通知-順藥</option>");
-                $('#selectone').append("<option value='1314'>抽籤通知-中石化</option>");
+//                 $('#selectone').prepend("<option value='6535' selected>抽籤通知-順藥</option>");
+                $('#selectone').prepend("<option value='1314'>抽籤通知-中石化</option>");
                 $('#selectone').append("<option value='1432'>抽籤通知-大魯閣</option>");
                 $('#selectone').append("<option value='3029'>抽籤通知-零壹</option>");
                 $('#selectone').append("<option value='4770'>抽籤通知-上品</option>");
