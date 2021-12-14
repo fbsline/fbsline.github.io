@@ -147,31 +147,6 @@
                 draw1 = data;
             });
         });
-
-        var draw1314;
-        $(function () {
-            $.getJSON("1314.json", function (data) {
-                draw1314 = data;
-            });
-        });
-        var draw1432;
-        $(function () {
-            $.getJSON("1432.json", function (data) {
-                draw1432 = data;
-            });
-        });
-        var draw3029;
-        $(function () {
-            $.getJSON("3029.json", function (data) {
-                draw3029 = data;
-            });
-        });
-        var draw4770;
-        $(function () {
-            $.getJSON("4770.json", function (data) {
-                draw4770 = data;
-            });
-        });
         var draw2812;
         $(function () {
             $.getJSON("2812.json", function (data) {
@@ -199,58 +174,6 @@
                                 type: 'flex',
                                 altText: '你有一則EDM通知',
                                 contents: draw1
-                        }
-                    ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-
-                }
-                if (checkValue == "1314") {
-                    liff.shareTargetPicker([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw1314
-                        }
-                    ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-
-                }
-                if (checkValue == "1432") {
-                    liff.shareTargetPicker([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw1432
-                        }
-                    ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-
-                }
-                if (checkValue == "3029") {
-                    liff.shareTargetPicker([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw3029
-                        }
-                    ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-
-                }
-                if (checkValue == "4770") {
-                    liff.shareTargetPicker([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw4770
                         }
                     ])
                         .then(() => {
@@ -299,75 +222,6 @@
                                 contents: draw1
 
                             }
-                        ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-                        .catch((err) => {
-                            console.log('error', err);
-                        });
-
-                }
-                if (ccc == "1314") {
-                    liff.sendMessages([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw1314
-
-                            }
-                        ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-                        .catch((err) => {
-                            console.log('error', err);
-                        });
-
-                }
-                if (ccc == "1432") {
-                    liff.sendMessages([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw1432
-
-                            }
-                        ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-                        .catch((err) => {
-                            console.log('error', err);
-                        });
-
-                }
-                if (ccc == "3029") {
-                    liff.sendMessages([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw3029
-
-                            }
-                        ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-                        .catch((err) => {
-                            console.log('error', err);
-                        });
-
-                }
-                if (ccc == "4770") {
-                    liff.sendMessages([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw4770
-
-                            }
-                           
                         ])
                         .then(() => {
                             alert('訊息已傳送!');
@@ -438,10 +292,6 @@
         $(document).ready(function () {
             console.log(val);
             if (val != null) {
-                $('#selectone').append("<option value='1314'>抽籤通知-中石化</option>");
-                $('#selectone').append("<option value='1432'>抽籤通知-大魯閣</option>");
-                $('#selectone').append("<option value='3029'>抽籤通知-零壹</option>");
-                $('#selectone').append("<option value='4770'>抽籤通知-上品</option>");
                 $('#selectone').append("<option value='2812'>抽籤通知-台中銀</option>");
                 $('#selectone').append("<option value='8476'>抽籤通知-台境</option>");
                 $('#selectone').append("<option value='edm00900'>EDM-00900</option>");
@@ -450,10 +300,6 @@
                 $('#ButtonSendMsg').remove();
 
             } else {
-                $('#selectone').append("<option value='1314'>抽籤通知-中石化</option>");
-                $('#selectone').append("<option value='1432'>抽籤通知-大魯閣</option>");
-                $('#selectone').append("<option value='3029'>抽籤通知-零壹</option>");
-                $('#selectone').append("<option value='4770'>抽籤通知-上品</option>");
                 $('#selectone').append("<option value='2812'>抽籤通知-台中銀</option>");
                 $('#selectone').append("<option value='8476'>抽籤通知-台境</option>");
                 $('#selectone').append("<option value='edm00900'>EDM-00900</option>");
