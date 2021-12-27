@@ -147,18 +147,13 @@
                 draw1 = data;
             });
         });
-        var draw2812;
+        var draw3592;
         $(function () {
-            $.getJSON("2812.json", function (data) {
-                draw2812 = data;
+            $.getJSON("3592.json", function (data) {
+                draw3592 = data;
             });
         });
-        var draw8476;
-        $(function () {
-            $.getJSON("8476.json", function (data) {
-                draw8476 = data;
-            });
-        });
+
         
 
 
@@ -182,24 +177,11 @@
                         })
 
                 }
-                if (checkValue == "2812") {
+                if (checkValue == "3592") {
                     liff.shareTargetPicker([{
                                 type: 'flex',
                                 altText: '📢，你有一則抽籤通知',
-                                contents: draw2812
-                        }
-                    ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-
-                }
-                if (checkValue == "8476") {
-                    liff.shareTargetPicker([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw8476
+                                contents: draw3592
                         }
                     ])
                         .then(() => {
@@ -232,11 +214,11 @@
                         });
 
                 }
-                if (ccc == "2812") {
+                if (ccc == "3592") {
                     liff.sendMessages([{
                                 type: 'flex',
                                 altText: '📢，你有一則抽籤通知',
-                                contents: draw2812
+                                contents: draw3592
 
                             }
                            
@@ -249,26 +231,7 @@
                             console.log('error', err);
                         });
 
-                }        
-                if (ccc == "8476") {
-                    liff.sendMessages([{
-                                type: 'flex',
-                                altText: '📢，你有一則抽籤通知',
-                                contents: draw8476
-
-                            }
-                           
-                        ])
-                        .then(() => {
-                            alert('訊息已傳送!');
-                            liff.closeWindow();
-                        })
-                        .catch((err) => {
-                            console.log('error', err);
-                        });
-
-                }                           
-                
+                }          
             });
         }
 
@@ -292,16 +255,14 @@
         $(document).ready(function () {
             console.log(val);
             if (val != null) {
-                $('#selectone').append("<option value='2812'>抽籤通知-台中銀</option>");
-                $('#selectone').append("<option value='8476'>抽籤通知-台境</option>");
+                $('#selectone').append("<option value='3592'>抽籤通知-瑞鼎</option>");
                 $('#selectone').append("<option value='edm00900'>EDM-00900</option>");
                 $('#selectone').val(val);
                 $('#selectone').attr('disabled', 'disabled');
                 $('#ButtonSendMsg').remove();
 
             } else {
-                $('#selectone').append("<option value='2812'>抽籤通知-台中銀</option>");
-                $('#selectone').append("<option value='8476'>抽籤通知-台境</option>");
+                $('#selectone').append("<option value='3592'>抽籤通知-瑞鼎</option>");
                 $('#selectone').append("<option value='edm00900'>EDM-00900</option>");
             }
 
