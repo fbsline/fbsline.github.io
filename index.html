@@ -153,6 +153,12 @@
                 draw3592 = data;
             });
         });
+        var test;
+        $(function () {
+            $.getJSON("test.json", function (data) {
+                test = data;
+            });
+        });
 
         
 
@@ -182,6 +188,19 @@
                                 type: 'flex',
                                 altText: '📢，你有一則抽籤通知',
                                 contents: draw3592
+                        }
+                    ])
+                        .then(() => {
+                            alert('訊息已傳送!');
+                            liff.closeWindow();
+                        })
+
+                }
+                if (checkValue == "test") {
+                    liff.shareTargetPicker([{
+                                type: 'flex',
+                                altText: '📢，測試通知',
+                                contents: test
                         }
                     ])
                         .then(() => {
@@ -232,6 +251,24 @@
                         });
 
                 }          
+                if (ccc == "test") {
+                    liff.sendMessages([{
+                                type: 'flex',
+                                altText: '📢，測試訊息',
+                                contents: test
+
+                            }
+                           
+                        ])
+                        .then(() => {
+                            alert('訊息已傳送!');
+                            liff.closeWindow();
+                        })
+                        .catch((err) => {
+                            console.log('error', err);
+                        });
+
+                }          
             });
         }
 
@@ -255,6 +292,7 @@
         $(document).ready(function () {
             console.log(val);
             if (val != null) {
+                $('#selectone').append("<option value='test'>測試</option>");
                 $('#selectone').append("<option value='3592'>抽籤通知-瑞鼎</option>");
                 $('#selectone').append("<option value='edm00900'>EDM-00900</option>");
                 $('#selectone').val(val);
