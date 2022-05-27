@@ -139,12 +139,13 @@
         "type": "edm",
         "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/2022052605342022d4.PNG?18",
         "cardtitle": "【新戶_T+14】<br>定期定額教學",
-        "eventurl": "https://www.fbs.com.tw/e7.htm",
+        "eventurl": "https://www.fubon.com/securities/hot_new/open-now/etf.html?utm_source=sec168&utm_medium=event_all&utm_campaign=etf_event",
         "modaltitle": "【新戶_T+14】定期定額教學",
         "imgsrc": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202205261203101024.jpg?11",
         "ratio": "449:864",
-        "rightbuttonname":"點我前往定期定額",
-        "linebuttonname":"點我前往定期定額",
+        "rightbuttonname":"前往定期定額活動",
+        "linebuttonname":"前往定期定額活動",
+        "flex":2,
         "button":[
             {"label": "⭐️約定《美股定期定額》 GO","uri": "https://dca.fbs.com.tw/rspweb"},
             {"label": "⭐️約定《台股定期定額》 GO","uri": "https://www.fbs.com.tw/e7.htm"}
@@ -160,8 +161,8 @@
         "imgsrc": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202205261216170fd7.jpg?18",
         "ratio": "449:879",
         "flex":2,
-        "rightbuttonname":"點我前往股票抽籤",
-        "linebuttonname":"點我前往股票抽籤"
+        "rightbuttonname":"前往股票抽籤",
+        "linebuttonname":"前往股票抽籤"
     },
     {
         "formid": "2006",
@@ -173,8 +174,8 @@
         "imgsrc": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202205261221551911.jpg?56",
         "ratio": "449:785",
         "flex":2,
-        "rightbuttonname":"點我開啟e點通",
-        "linebuttonname":"點我開啟e點通"
+        "rightbuttonname":"開啟e點通",
+        "linebuttonname":"開啟e點通"
     },
     {
         "formid":"video1001",
