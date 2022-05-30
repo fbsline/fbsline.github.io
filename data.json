@@ -113,13 +113,16 @@
         "type": "edm",
         "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/20220526053514f609.PNG?26",
         "cardtitle": "【新戶_T+6】<br>LINE官方帳號邀請",
-        "eventurl": "https://linebcs.fubon.com/fubonapi/l/31403",
+        "eventurl": "https://www.fubon.com/securities/line/index.html?utm_source=sec168&utm_medium=hot_news&utm_campaign=line&_ga=2.267284103.802866006.1653871158-1932198927.1625209597#function",
         "modaltitle": "【新戶_T+6】LINE官方帳號邀請",
         "imgsrc": "https://emarketing.fbs.com.tw/fbs_a/user_upload/20220525031912b240.jpg?13",
         "ratio": "449:1198",
         "flex":2,
-        "rightbuttonname":"綁定證券LINE好友",
-        "linebuttonname":"綁定證券LINE好友"
+        "rightbuttonname":"前往了解",
+        "linebuttonname":"前往了解",
+        "button":[
+            {"label": "綁定證券Line好友","uri": "https://linebcs.fubon.com/fubonapi/l/31403"}
+        ]
     },
     {
         "formid": "2003",
