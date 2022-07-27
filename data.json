@@ -33,7 +33,7 @@
     {
         "formid": "1006",
         "type": "event",
-        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202205260539232903.jpg?39",
+        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202207270332033710.png?4",
         "cardtitle": "證好友召集令 友禮大放送",
         "eventurl": "https://www.fubon.com/securities/line/index.html?utm_source=sec168&utm_medium=event_all&utm_campaign=line_event",
         "modaltitle": "📢證好友召集令 友禮大放送",
@@ -50,7 +50,7 @@
     {
         "formid": "2001",
         "type": "edm",
-        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/20220526053348fb6d.PNG?15",
+        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202207270330402ba6.png?4",
         "cardtitle": "【新戶_T+2】<br>e點通操作教學",
         "eventurl": "https://www.youtube.com/watch?v=Sey0rTgvE6k",
         "modaltitle": "【新戶_T+2】e點通操作教學",
@@ -62,7 +62,7 @@
     {
         "formid": "2002",
         "type": "edm",
-        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/20220526053514f609.PNG?26",
+        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202207270330571abb.png?4",
         "cardtitle": "【新戶_T+6】<br>LINE官方帳號邀請",
         "eventurl": "https://www.fubon.com/securities/line/index.html?utm_source=sec168&utm_medium=hot_news&utm_campaign=line&_ga=2.267284103.802866006.1653871158-1932198927.1625209597#function",
         "modaltitle": "【新戶_T+6】LINE官方帳號邀請",
@@ -91,7 +91,7 @@
     {
         "formid": "2004",
         "type": "edm",
-        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/2022052605342022d4.PNG?18",
+        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/2022072703311072ef.png?4",
         "cardtitle": "【新戶_T+14】<br>定期定額教學",
         "eventurl": "https://www.fubon.com/securities/hot_new/open-now/etf.html?utm_source=sec168&utm_medium=event_all&utm_campaign=etf_event",
         "modaltitle": "【新戶_T+14】定期定額教學",
@@ -108,7 +108,7 @@
     {
         "formid": "2005",
         "type": "edm",
-        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202205260535558dcf.PNG?45",
+        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/20220727033122faeb.png?4",
         "cardtitle": "【新戶_T+17】<br>股票抽籤教學",
         "eventurl": "https://www.fbs.com.tw/e11.htm",
         "modaltitle": "【新戶_T+17】股票抽籤教學",
@@ -121,7 +121,7 @@
     {
         "formid": "2006",
         "type": "edm",
-        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/202205260537443c2f.PNG?39",
+        "cardimg": "https://emarketing.fbs.com.tw/fbs_a/user_upload/20220727033135e49d.png?4",
         "cardtitle": "【新戶_T+25】<br>零股教學",
         "eventurl": "https://www.fbs.com.tw/e.htm",
         "modaltitle": "【新戶_T+25】零股教學",
@@ -303,56 +303,100 @@
         "formid":"video1013",
         "type":"video",
         "cardimg":"https://img.youtube.com/vi/G0PghqfHulk/hqdefault.jpg",
-        "cardtitle":"e點通教學#13<br>如何搜尋基金呢?",
+        "cardtitle":"基金平台教學#1<br>如何搜尋基金呢?",
         "eventurl":"https://www.youtube.com/watch?v=G0PghqfHulk",
         "modaltitle":"如何搜尋基金呢?",
         "imgsrc":"https://img.youtube.com/vi/G0PghqfHulk/hqdefault.jpg",
         "secsrc":"https://www.youtube.com/watch?v=G0PghqfHulk",
         "rightbuttonname":"觀看影片",
         "linebuttonname":"觀看影片",
-        "linetext":"e點通教學#13\\n如何搜尋基金呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=G0PghqfHulk"
+        "linetext":"基金平台教學#1\\n如何搜尋基金呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=G0PghqfHulk"
 
     },
     {
         "formid":"video1014",
         "type":"video",
         "cardimg":"https://img.youtube.com/vi/ieHAWR-4od8/hqdefault.jpg",
-        "cardtitle":"e點通教學#14<br>如何申購基金呢?",
+        "cardtitle":"基金平台教學#2<br>如何申購基金呢?",
         "eventurl":"https://www.youtube.com/watch?v=ieHAWR-4od8",
         "modaltitle":"如何申購基金呢?",
         "imgsrc":"https://img.youtube.com/vi/ieHAWR-4od8/hqdefault.jpg",
         "secsrc":"hhttps://www.youtube.com/watch?v=ieHAWR-4od8",
         "rightbuttonname":"觀看影片",
         "linebuttonname":"觀看影片",
-        "linetext":"e點通教學#14\\n如何申購基金呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=ieHAWR-4od8"
+        "linetext":"基金平台教學#2\\n如何申購基金呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=ieHAWR-4od8"
 
     },
     {
         "formid":"video1015",
         "type":"video",
         "cardimg":"https://img.youtube.com/vi/pNRZN7-ETUg/hqdefault.jpg",
-        "cardtitle":"e點通教學#15<br>如何查詢基金庫存",
+        "cardtitle":"基金平台教學#3<br>如何查詢基金庫存",
         "eventurl":"https://www.youtube.com/watch?v=pNRZN7-ETUg",
         "modaltitle":"如何查詢基金庫存",
         "imgsrc":"https://img.youtube.com/vi/pNRZN7-ETUg/hqdefault.jpg",
         "secsrc":"https://www.youtube.com/watch?v=pNRZN7-ETUg",
         "rightbuttonname":"觀看影片",
         "linebuttonname":"觀看影片",
-        "linetext":"e點通教學#15\\n如何查詢基金庫存\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=pNRZN7-ETUg"
+        "linetext":"基金平台教學#3\\n如何查詢基金庫存\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=pNRZN7-ETUg"
 
     },
     {
         "formid":"video1016",
         "type":"video",
         "cardimg":"https://img.youtube.com/vi/eLos_6peMeM/hqdefault.jpg",
-        "cardtitle":"e點通教學#16<br>如何申請信託出金呢?",
+        "cardtitle":"基金平台教學#4<br>如何申請信託出金呢?",
         "eventurl":"https://www.youtube.com/watch?v=eLos_6peMeM",
         "modaltitle":"如何申請信託出金呢?",
         "imgsrc":"https://img.youtube.com/vi/eLos_6peMeM/hqdefault.jpg",
         "secsrc":"https://www.youtube.com/watch?v=eLos_6peMeM",
         "rightbuttonname":"觀看影片",
         "linebuttonname":"觀看影片",
-        "linetext":"e點通教學#16\\n如何申請信託出金呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=eLos_6peMeM"
+        "linetext":"基金平台教學#4\\n如何申請信託出金呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=eLos_6peMeM"
+
+    },
+    {
+        "formid":"video1017",
+        "type":"video",
+        "cardimg":"https://img.youtube.com/vi/APg5BxVNgTk/hqdefault.jpg",
+        "cardtitle":"基金平台教學#5<br>如何在e點通填寫或更新KYC呢?",
+        "eventurl":"https://www.youtube.com/watch?v=APg5BxVNgTk",
+        "modaltitle":"如何在e點通填寫或更新KYC呢?",
+        "imgsrc":"https://img.youtube.com/vi/APg5BxVNgTk/hqdefault.jpg",
+        "secsrc":"https://www.youtube.com/watch?v=APg5BxVNgTk",
+        "rightbuttonname":"觀看影片",
+        "linebuttonname":"觀看影片",
+        "linetext":"基金平台教學#5\\n如何在e點通填寫或更新KYC呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=APg5BxVNgTk"
+
+    },
+    {
+        "formid":"video1018",
+        "type":"video",
+        "cardimg":"https://img.youtube.com/vi/_MAMqMmWfWc/hqdefault.jpg",
+        "cardtitle":"e點通教學#13<br>如何申請美股即時報價呢?",
+        "eventurl":"https://www.youtube.com/watch?v=_MAMqMmWfWc",
+        "modaltitle":"如何申請美股即時報價呢?",
+        "imgsrc":"https://img.youtube.com/vi/_MAMqMmWfWc/hqdefault.jpg",
+        "secsrc":"https://www.youtube.com/watch?v=_MAMqMmWfWc",
+        "rightbuttonname":"觀看影片",
+        "linebuttonname":"觀看影片",
+        "linetext":"e點通教學#13\\如何申請美股即時報價呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=_MAMqMmWfWc"
+
+    },
+    {
+        "formid":"video1019",
+        "type":"video",
+        "cardimg":"https://img.youtube.com/vi/4Nf_LrVXyFg/hqdefault.jpg",
+        "cardtitle":"e點通教學#14<br>如何交易海外股票呢?",
+        "eventurl":"https://www.youtube.com/watch?v=4Nf_LrVXyFg",
+        "modaltitle":"如何交易海外股票呢?",
+        "imgsrc":"https://img.youtube.com/vi/4Nf_LrVXyFg/hqdefault.jpg",
+        "secsrc":"https://www.youtube.com/watch?v=4Nf_LrVXyFg",
+        "rightbuttonname":"觀看影片",
+        "linebuttonname":"觀看影片",
+        "linetext":"e點通教學#14\\如何交易海外股票呢?\\n\\n👉點我觀看影片\\nhttps://www.youtube.com/watch?v=4Nf_LrVXyFg"
 
     }
+    
+
 ]
